@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+
+
+/* //navbar */
+.heading{
+font: 1em sans-serif;
+font-size: 2.5rem;
+ font-family: 'Poppins', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+
+font-weight: 500;
+
+}
