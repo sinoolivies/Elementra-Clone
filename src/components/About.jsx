@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { FaBrain, FaLightbulb, FaLaptopCode, FaTools } from "react-icons/fa";
 import CountUp from "react-countup";
-import aboutImage from "../assets/About.jpg";
+import aboutImage from "../assets/about.jpg";
 import about1 from "../assets/about1.jpg";
 import about2 from "../assets/about2.jpg";
 import about3 from "../assets/about3.jpg";
