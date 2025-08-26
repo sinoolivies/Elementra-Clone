@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-transparent text-white p-4 flex justify-between items-center z-50">
+    <nav className=" absolute top-0 left-0 w-full bg-transparent text-white p-4 flex justify-between items-center z-50">
       {/* Logo */}
       <div className="flex items-center gap-2">
         <img src={logo} alt="Logo" className="h-6" />
