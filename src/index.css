@@ -12,8 +12,28 @@ font-weight: 500;
 
 }
 
-.about{
-  font-family: 'Poppins', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
- background-color: #f4f6f7 !important;
-;
+.marquee-track {
+  animation: scroll-left 25s linear infinite;
+  margin-top: 2rem;
+  font-family: 'Transforma', sans-serif;
+  display: flex;
+  width: fit-content;
+  white-space: nowrap;    
+  box-sizing: border-box;
+  padding-right: 100%;
+  align-items: center;
+  justify-content: center;
+  
+
+  
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+    
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }

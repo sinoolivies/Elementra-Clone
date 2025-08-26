@@ -39,7 +39,7 @@ const about4Visible = useIntersectionObserver(about4Ref);
   const imagesVisible = imagesRefs.map((ref) => useIntersectionObserver(ref));
 
   return (
-    <section className="bg-white py-16">
+    <section className="relative bg-white py-16">
       <div className="  container mx-auto px-6 md:px-12 lg:px-20">
         
         <div className="flex flex-col md:flex-row items-stretch gap-12">
@@ -188,6 +188,17 @@ const about4Visible = useIntersectionObserver(about4Ref);
     </div>
   </div>
 </div>
+
+<div className="marque-body relative overflow-hidden w-full bg-white">
+  <div className="marquee-track flex whitespace-nowrap">
+    {Array(20).fill("Your Visual Storytelling").map((text, index) => (
+      <span key={index} className="mx-4 text-xl font-heading text-brand-dark">
+        {text}
+      </span>
+    ))} 
+  </div>
+</div>
+
 
 
 
