@@ -5,6 +5,7 @@ import Feature from './components/Feature';
 import JOin from './components/Join';
 import AboutElementra from "./components/AboutElementra";
 import Footer from "./components/Footer";
+import ScrollTop from "./components/ScrollTop";
 function App() {
   return(
     <>
@@ -13,6 +14,7 @@ function App() {
     <AboutSection />
     <Feature />
     <JOin />
+    <ScrollTop />
     <AboutElementra />
     <Footer />
     </>

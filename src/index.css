@@ -37,3 +37,18 @@ font-weight: 500;
     transform: translateX(-50%);
   }
 }
+
+/* styles.css or a global CSS file */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: inline-flex;
+  animation: marquee 20s linear infinite;
+}

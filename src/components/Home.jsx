@@ -46,7 +46,7 @@ const Home = () => {
   const limitsVisible = useIntersectionObserver(limitsRef);
 
   return (
-    <div className="relative w-full min-h-screen">
+    <div className="relative w-full min-h-screen" id="home">
    
       <Navbar />
 

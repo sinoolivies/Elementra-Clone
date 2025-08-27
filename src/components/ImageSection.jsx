@@ -55,19 +55,21 @@ const Gallery = () => {
         </div>
 
         {/* 🔥 Marquee under the gallery */}
-        <div className="overflow-hidden whitespace-nowrap border-t border-b border-gray-300 py-4 mt-12">
-          <div className="inline-flex animate-marquee space-x-8">
-            {[...words, ...words].map((word, idx) => (
-              <span
-                key={idx}
-                className="flex items-center space-x-2 text-gray-800 text-xl font-semibold"
-              >
-                <span>{word}</span>
-                <span className="animate-spin text-yellow-500">*</span>
-              </span>
-            ))}
-          </div>
-        </div>
+      <div className="overflow-hidden whitespace-nowrap border-t border-b border-gray-300 py-4 mt-12">
+  <div className="inline-flex animate-marquee space-x-8">
+    {[...words, ...words].map((word, idx) => (
+      <span
+        key={idx}
+        className="flex items-center space-x-2 text-white text-xl font-semibold"
+      >
+        <span>{word}</span>
+        <span className="animate-spin text-yellow-500">*</span>
+      </span>
+    ))}
+  </div>
+</div>
+
+
       </div>
     </section>
   );

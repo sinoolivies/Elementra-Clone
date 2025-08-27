@@ -27,7 +27,7 @@ const FeatureSection = () => {
   const featureVisible = featureRefs.map((ref) => useIntersectionObserver(ref));
 
   return (
-    <section className="relative bg-white py-20">
+    <section className="relative bg-white py-20" id="features">
       <div className="container mx-auto px-6 md:px-12 lg:px-20 flex flex-col md:flex-row gap-12">
         
         {/* LEFT SIDE (Sticky narrative) */}

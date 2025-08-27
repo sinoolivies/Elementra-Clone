@@ -39,7 +39,7 @@ const about4Visible = useIntersectionObserver(about4Ref);
   const imagesVisible = imagesRefs.map((ref) => useIntersectionObserver(ref));
 
   return (
-    <section className="relative bg-white py-16">
+    <section className="relative bg-white py-16" id="about">
       <div className="  container mx-auto px-6 md:px-12 lg:px-20">
         
         <div className="flex flex-col md:flex-row items-stretch gap-12">

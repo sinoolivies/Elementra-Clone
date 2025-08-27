@@ -72,7 +72,7 @@ const JoinUsSection = () => {
   };
 
   return (
-    <section className="joinus relative w-full py-20 px-4 md:px-12 lg:px-20 bg-gray-100">
+    <section className="joinus relative w-full py-20 px-4 md:px-12 lg:px-20 bg-gray-100" id="joinus">
       {/* Header */}
       <div className="text-center mb-12 space-y-4">
         <h2 className="text-4xl font-bold text-gray-900">Dynamic Pricing</h2>

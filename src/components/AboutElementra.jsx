@@ -49,7 +49,7 @@ const ElementraLayout = () => {
   const articleVisible = articleRefs.map((ref) => useIntersectionObserver(ref));
 
   return (
-    <section className=" relative w-full bg-white py-12">
+    <section className="news relative w-full bg-white py-12 " id="news">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Header */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
