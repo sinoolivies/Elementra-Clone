@@ -31,7 +31,7 @@ const FeatureSection = () => {
       <div className="container mx-auto px-6 md:px-12 lg:px-20 flex flex-col md:flex-row gap-12">
         
         {/* LEFT SIDE (Sticky narrative) */}
-        <div className="md:w-1/3 lg:w-2/5 self-start md:sticky md:top-24 h-fit   overflow-hidden ">
+        <div className="md:w-1/3 lg:w-2/5 self-start md:sticky md:top-24 h-fit">
           <p className="text-sm uppercase tracking-widest text-indigo-600 font-semibold">
             Unlock Creativity
           </p>
@@ -52,36 +52,38 @@ const FeatureSection = () => {
           </button>
         </div>
 
-        {/* RIGHT SIDE (Scrollable features) */}
+        {/* RIGHT SIDE (Text above image) */}
         <div className="md:w-2/3 lg:w-3/5 flex flex-col gap-16">
           {features.map((feature, index) => (
             <div
               key={index}
               ref={featureRefs[index]}
-              className={`flex flex-col md:flex-row items-center gap-6 transition-all duration-700 ${
+              className={`transition-all duration-700 ${
                 featureVisible[index]
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-6"
               }`}
             >
-              {/* Image */}
-              <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-lg">
-                <img
-                  src={feature.img}
-                  alt={feature.title}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-
-              {/* Text */}
-              <div className="w-full md:w-1/2">
-                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">
+              {/* Text ABOVE image */}
+              <div className="mb-4">
+                <h3 className="text-2xl font-bold text-gray-800 mb-2">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600 text-sm md:text-base">
+                <p className="text-gray-600 text-sm md:text-base max-w-xl">
                   {feature.desc}
                 </p>
               </div>
+
+              
+              {/* Image */}
+<div className="rounded-2xl overflow-hidden shadow-lg w-full">
+  <img
+    src={feature.img}
+    alt={feature.title}
+    className="w-full h-auto max-h-[500px] object-cover hover:scale-105 transition-transform duration-500"
+  />
+</div>
+
             </div>
           ))}
         </div>
